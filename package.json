@@ -1,0 +1,31 @@
+{
+  "name": "info-searcher",
+  "version": "1.0.0",
+  "description": "An application that searches information using DuckDuckGo API.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evo777/Info-Searcher.git"
+  },
+  "author": "Emmanuel Vo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evo777/Info-Searcher/issues"
+  },
+  "homepage": "https://github.com/evo777/Info-Searcher#readme",
+  "devDependencies": {
+    "browserify": "*",
+    "flux": "*",
+    "gulp": "*",
+    "reactify": "*",
+    "vinyl-source-stream": "*",
+    "object-assign": "*"
+  },
+  "dependencies":{
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  }
+}
