@@ -6,7 +6,12 @@ var SearchForm = React.createClass({
   render: function(){
     return(
       <div>
-        Form
+        <form onSubmit={this.searchText} className="well">
+          <div className="form-group">
+            <label>Search For Something</label>
+            <input type="text" className="form-control" ref="text" />
+          </div>
+        </form>
       </div>
     );
   }
