@@ -3,7 +3,7 @@ var AppActions = require('../actions/AppActions');
 var AppStore = require('../stores/AppStore');
 
 var SearchForm = React.createClass({
-  render: function(){
+  render: function() {
     return(
       <div>
         <form onSubmit={this.searchText} className="well">
@@ -14,6 +14,16 @@ var SearchForm = React.createClass({
         </form>
       </div>
     );
+  },
+
+  searchText: function(e) {
+    e.preventDefault();
+
+    var search = {
+      text: this.refs.text.value.trim()
+    };
+
+    AppActions.searchText(search);
   }
 });
 
